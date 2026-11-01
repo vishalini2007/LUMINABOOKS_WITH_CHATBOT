@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Books | Professional Online Bookstore</title>
+  <meta name="description" content="Discover your next great read at Lumina Books.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Lumina<span>Books</span></a>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Lost in a Good Book</h1>
+      <p>Explore thousands of captivating titles across every genre. Find your next favorite story today.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <main>
+    <h2 class="section-title">Featured Releases</h2>
+    <div class="grid-container" id="featured-books">
+      <!-- Books will be injected via JS or statically added here -->
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Silent Patient" class="book-image">
+        <div class="book-info">
+          <h3 class="book-title">The Silent Patient</h3>
+          <p class="book-author">Alex Michaelides</p>
+          <p class="book-price">$14.99</p>
+          <button class="btn btn-block" onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Where the Crawdads Sing" class="book-image">
+        <div class="book-info">
+          <h3 class="book-title">Where the Crawdads Sing</h3>
+          <p class="book-author">Delia Owens</p>
+          <p class="book-price">$16.50</p>
+          <button class="btn btn-block" onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Atomic Habits" class="book-image">
+        <div class="book-info">
+          <h3 class="book-title">Atomic Habits</h3>
+          <p class="book-author">James Clear</p>
+          <p class="book-price">$19.99</p>
+          <button class="btn btn-block" onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1618666012174-83b441c0bc76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dune" class="book-image">
+        <div class="book-info">
+          <h3 class="book-title">Dune</h3>
+          <p class="book-author">Frank Herbert</p>
+          <p class="book-price">$12.99</p>
+          <button class="btn btn-block" onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="color:white; margin-bottom:1rem; display:inline-block;">Lumina<span style="color:var(--secondary-color);">Books</span></a>
+        <p>Bringing stories to life, one page at a time. Your premier destination for literary adventures.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="products.html">Books</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lumina Books. All rights reserved.</p>
+    </div>
+  </footer>
+
+  LUMINA AI CHATBOT
+<div class="chatbot-container">
+
+    <button class="chatbot-toggle" id="chatbotToggle" type="button">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <div class="chatbot-box" id="chatbotBox">
+
+        <div class="chatbot-header">
+            <div>
+                <h3><i class="fas fa-robot"></i> Lumina AI</h3>
+                <small>Online | Here to help you</small>
+            </div>
+
+            <button id="closeChat" type="button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-message">
+                Hi! Welcome to Lumina Books! 📚
+                How can I help you today?
+            </div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="userMessage"
+                   placeholder="Ask me anything...">
+
+            <button id="sendMessage" type="button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

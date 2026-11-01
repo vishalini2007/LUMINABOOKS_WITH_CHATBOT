@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Lumina Books</title>
+  <meta name="description" content="Learn more about Lumina Books and our mission to spread the love of reading.">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Lumina<span>Books</span></a>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="section-title">Our Story</h1>
+
+    <div class="about-content">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Inside Lumina Books">
+      </div>
+
+      <div class="about-text">
+        <h2>A Haven for Book Lovers</h2>
+
+        <p>Founded in 2015, Lumina Books began with a simple mission: to curate a collection of exceptional literature that enlightens, entertains, and inspires. We believe that the right book at the right time can change a life.</p>
+
+        <p>What started as a small corner shop has blossomed into a premier online destination for bibliophiles around the world. We carefully select every title we offer, ensuring our collection reflects diverse voices and compelling narratives.</p>
+
+        <p>Our team consists of lifelong readers, literary critics, and passionate storytellers who are dedicated to helping you find your next great read. Whether you're searching for a classic masterpiece or a contemporary thriller, Lumina Books is your trusted guide.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom" style="margin-top:0; border-top:none; padding-top:1rem;">
+      <p>&copy; 2026 Lumina Books. All rights reserved.</p>
+    </div>
+  </footer>
+
+  AI ASSISTANT
+
+  <div class="chatbot-container">
+
+    <button class="chatbot-toggle" id="chatbotToggle" type="button">
+      <i class="fas fa-robot"></i>
+    </button>
+
+    <div class="chatbot-box" id="chatbotBox">
+
+      <div class="chatbot-header">
+        <div>
+          <h3><i class="fas fa-robot"></i> Lumina AI</h3>
+          <small>Online | Here to help you</small>
+        </div>
+
+        <button id="closeChat" type="button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="chatbot-messages" id="chatMessages">
+        <div class="bot-message">
+          Hi! Welcome to Lumina Books! 📚
+          How can I help you today?
+        </div>
+      </div>
+
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="userMessage"
+          placeholder="Ask me anything..."
+        >
+
+        <button id="sendMessage" type="button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
